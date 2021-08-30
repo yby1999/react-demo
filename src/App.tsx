@@ -5,7 +5,7 @@ import Demo from './components/Demo';
 function App() {
   return (
     <div className="App">
-      <Demo name={'yby'}></Demo>
+      <Demo name={'yby123'}></Demo>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
