@@ -6,7 +6,7 @@ export interface Props {
 }
 
 const get = (num : number) => {
-    return Array(num + 1).join('!');
+    return Array(num + 1).join('!!!');
 }
 const Demo: React.FC<Props> = ({ name, level = 1 }: Props) => {
 
