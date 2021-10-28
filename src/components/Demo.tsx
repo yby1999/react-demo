@@ -13,20 +13,38 @@ const Demo: React.FC<Props> = ({ name, level = 1 }: Props) => {
 
     const [query, setQuery] = useState<any>("222333");
     
-    const makeData = (x :any) => {
-        console.log('aa',x)
-        return x+1;
+    const makeData = async (x :any) => {
+
+        return new Promise((re, rj) => {
+            setTimeout(() => { re (x+1) }, 3000)
+        })
+        
+    }
+    const data = {
+        users : [
+            {
+                a: '',
+                b: '1',
+            },
+            {
+                a: '',
+                b: '2',
+            }
+        ]
     }
 
     useEffect(() => {
-        const data = async () => {
-            const res = await makeData(9)
-            console.log(123)
-            setQuery(res)
-        }
-        data()
+        // const data = async () => {
+        //     const res = await makeData(9)
+        //     console.log(123)
+        //     setQuery(res)
+        // }
+        // data()
+        const users = data.users.map((item, _index) => {return { ...item, a: '1' , b: '7'}})
+        console.log({...data, users})
     },[])
-    console.log(query)
+    // makeData(9).then(r=>{ console.log(1,r)})
+    // console.log(query)
 
     return (
         <div style={{ height: '200px' }} className="greeting">
