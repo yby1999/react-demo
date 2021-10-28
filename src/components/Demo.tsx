@@ -12,6 +12,8 @@ const get = (num: number) => {
 const Demo: React.FC<Props> = ({ name, level = 1 }: Props) => {
 
     const [query, setQuery] = useState<any>("222333");
+    const [query1, setQuery1] = useState<any>("222333");
+    const [query12, setQuery12] = useState<any>("222333");
     
     const makeData = async (x :any) => {
 
