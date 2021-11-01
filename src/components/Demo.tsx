@@ -12,21 +12,21 @@ const get = (num: number) => {
 const Demo: React.FC<Props> = ({ name, level = 1 }: Props) => {
 
 
-    const [query1, setQuery1] = useState<any>("222333");
-    const [query12, setQuery12] = useState<any>("222333");
-    const [query13, setQuery13] = useState<any>("222333");
-    const [query14, setQuery14] = useState<any>("222333");
-    const [query144, setQuery144] = useState<any>("222333");
-    const [query1444, setQuery1444] = useState<any>("222333");
-    const [query1333, setQuery1333] = useState<any>("222333");
+    // const [query1, setQuery1] = useState<any>("222333");
+    // const [query12, setQuery12] = useState<any>("222333");
+    // const [query13, setQuery13] = useState<any>("222333");
+    // const [query14, setQuery14] = useState<any>("222333");
+    // const [query144, setQuery144] = useState<any>("222333");
+    // const [query1444, setQuery1444] = useState<any>("222333");
+    // const [query1333, setQuery1333] = useState<any>("222333");
     
-    const makeData = async (x :any) => {
+    // const makeData = async (x :any) => {
 
-        return new Promise((re, rj) => {
-            setTimeout(() => { re (x+1) }, 3000)
-        })
+    //     return new Promise((re, rj) => {
+    //         setTimeout(() => { re (x+1) }, 3000)
+    //     })
         
-    }
+    // }
     const data = {
         users : [
             {
